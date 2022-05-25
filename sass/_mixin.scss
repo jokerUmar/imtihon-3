@@ -1,0 +1,9 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin headings1 {
+ font-size: 38px; 
+ font-family: 'STIX Two Text';
+}

@@ -1,0 +1,287 @@
+.header-container{
+  width: 90%;  
+  margin: 0 auto;
+  @include flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header{
+  font-family: 'Montserrat';
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(27, 27, 27, 1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
+  &-links{
+      @include flex;
+      margin-right: auto;
+      margin-left: auto;
+
+    &__link1{
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    &__link2{
+      color: red;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 20px;
+    }
+  }
+}
+
+.nav{
+
+  &__list{
+    margin-left: -30px;
+    list-style-type: none;
+    @include flex;
+    justify-content: space-between;
+
+    &-item{
+      margin-left: 30px;     
+    
+      &>a{
+        text-decoration: none;
+        font-weight: 500;
+        color: white;
+      }
+    }
+  }
+
+}
+
+.toggle{
+position: absolute;
+width: 90%;
+z-index: 99;
+left: 0;
+top: 72px;
+
+&-bars{
+  padding: 10px 16px;
+  margin-top: -30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 28px;
+  color: white;
+  position: absolute; 
+  right: -50px;
+  top: -50px;
+  border-radius: 5px;
+  margin-right: -10px;
+  display: none;
+}
+&-check{
+  position: absolute;
+  right: 0;
+  top: -64px;
+  visibility: hidden;
+  display: none;
+}
+
+&-xmark{
+  padding: 10px 16px;
+  margin-top: -10px;
+  margin-right: 20px;
+  right: 40px;
+  height: 50px;
+  position: absolute;
+  font-size: 28px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  display: none;
+}
+}
+
+.dropmenu{
+  width: 100%;
+  position: fixed;
+  color: white;
+  top: -60px;
+  padding-top: 78px;
+  padding-left: 120px;
+  padding-right: 70px;
+  background-color:rgba(27, 27, 27, 1);
+  transition: all 1s;
+  transform: translateX(1000px);
+  display: none;
+  z-index: 99;
+  
+  &-nav{
+    margin-right: auto;
+    &-list{
+      margin-right: auto;
+
+    &__item{
+      list-style-type: none;
+      &>a{
+        text-decoration: none;
+        color: white;
+        font-size: 34px;
+        margin-top: 20px;
+        display: inline-block; 
+      }
+    }      
+    }
+  }  
+
+  &-right{
+    width: 50%;
+    padding-bottom: 200px;
+    &-data{
+
+      &__italic{
+        color: rgba(92, 92, 92, 1);
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        display: inline-block;
+        &:first-child{
+          margin-top: 20px;
+        }
+      }
+
+      &__subtitle{
+        margin-bottom: 15px;
+
+      }
+
+      &__text{
+        color: rgba(138, 138, 138, 1);
+        margin-bottom: 30px;
+        font-size: 14px;
+      }
+
+      &__img{
+        width: 405px;
+        height: 405px;
+        position: relative;
+        right: 120px;
+        top: 100px;
+      }
+
+    }
+
+  }
+
+}
+
+
+@media screen and(max-width:1000px) {
+
+  .nav{
+    display: none;
+  }
+
+  input:checked~.dropmenu{
+    transition: all 1s;
+    transform: translateX(0px);
+  }
+
+  .toggle{
+
+    &-bars{
+      display:block;
+    }
+
+    &-xmark{
+      display: inline-block ;
+    }
+
+  }
+
+  .dropmenu{
+    display: flex;
+  }
+  
+}
+
+@media screen and (max-width:768px) {
+  .dropmenu{
+    padding-left: 60px;
+  }
+
+  .toggle-xmark{
+    right: 0;
+    display: inline-block;
+  }
+
+}
+
+@media screen and (max-width:640px) {
+
+  .header-links{
+    margin-left: auto;
+    }
+  
+}
+
+@media screen and(max-width:620px) {
+  
+  .header-links{
+    flex-direction: column;  
+    &__link1{
+      font-size: 16px;
+    }
+  }
+
+  .toggle-xmark{
+    right:2 0px;
+  }
+
+
+  
+}
+
+@media screen and(max-width:480px) {
+  
+  .header-links{
+    display: none;
+  }
+  
+  .toggle-bars{
+    right: 0;
+  }
+  
+  .toggle-xmark{
+    right: 40px;
+  }
+  
+  .dropmenu{
+    flex-direction: column;
+  }
+  
+  .dropmenu-nav-list__item>a{
+    font-size: 28px;
+  }  
+  
+}
+
+
+@media screen and(max-width:360px) {
+  
+  .dropmenu-nav-list__item>a{
+    font-size: 22px;
+  }  
+
+  .dropmenu-nav-list{
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .dropmenu{
+    padding-left: 0;
+    text-align: center;
+  }
+  
+}
+
+
