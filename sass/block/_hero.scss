@@ -223,7 +223,7 @@
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1440px) {
  
   .main-intelect-box{
 
@@ -307,7 +307,7 @@
       }
   
       &__link{
-        top: -18px;
+        top: -58px;
         left: 340px;
       }
     }
@@ -336,7 +336,7 @@
       
       &__link{
         top: 58px;
-        left: 100px;
+        left: 77px;
       }
     }
   } 
@@ -376,14 +376,14 @@
 
       &__span{
         display: inline-block;
-        max-width: 460px;
+        max-width: 400px;
         width: 100%;
         text-align: center;
       }
 
       &__title{
         display: block;
-        max-width: 460px;
+        max-width: 400px;
         width: 100%;
         text-align: center;
       }
@@ -432,6 +432,10 @@
 
   }
 
+  .main-intelect-box_heading__text1{
+    text-align: center;
+    margin-left: 80px;
+  }
 
 }
 @media screen and (max-width:430px) {  
@@ -452,7 +456,7 @@
       
       &__title{
         max-width: 400px;
-        font-size: 34px;
+        font-size: 30px;
       }
       
       &__text{
@@ -468,6 +472,7 @@
 
       &__text1{
         font-size: 14px;
+        margin-left: 0;
       }
       
       &__link{
@@ -481,25 +486,32 @@
 }
 
 @media screen and (max-width:393px) {
-
+  
   .main-intelect-box_heading__linkbox{
     margin-left:20px;
   }
-
+  
   .main-intelect-box_heading__link{
     margin-left: 0px;
   }
-
+  
   .main-intelect-box_heading__text{
     width: 300px;
   }
-
+  
   .main-intelect-box_heading__title{
     width: 320px;
   }
-
+  
   .main-intelect-box_heading__span{
     width: 300px;
   }
+  
+}
 
-}  
+
+@media screen and (max-width:340px) {
+  .main-intelect-box_heading__title{
+    font-size: 24px;
+  }
+}

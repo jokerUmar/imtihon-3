@@ -1,3 +1,116 @@
 .consult{
   background-image: url('/img/main/backgroud_red.png');
+  font-family: 'Montserrat';
+  height: 600px;
+  .consult-box{
+
+    &_heading{
+
+      &__title{
+        font-family: 'STIX Two Text';
+        max-width: 706px;
+        width: 100%;
+        font-size: 38px;
+      }
+
+      &__text{
+        color: white;
+        line-height: 25.6px;
+        font-weight: 400;
+      }
+    }
+  }
+
+}
+
+.consult-intelect-box_heading__text1{
+  background-color:black;
+  font-weight: 400;
+  max-width: 299px;
+  width: 100%;
+  line-height: 25.6px;
+  padding-top: 23px;
+}
+
+@media screen and (max-width:580px) {
+
+  .consult-box_heading__text{
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .consult-intelect-box_heading__text1{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .consult-box_heading__linkbox{
+    max-width: 500px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+}
+
+@media screen and (max-width:500px) {
+  
+  
+    .consult-box_heading__title{
+      font-size: 28px;
+      max-width: 400px;
+      width: 100%;
+    }
+    
+  .consult-box_heading__text{    
+    text-align: center;
+    max-width: 300px;
+    margin-top: 30px;
+  }
+
+  .consult-intelect-box_heading__text1{
+    margin: 0 auto;
+  }  
+}
+
+@media screen and (max-width:460px) {
+
+  .consult-box_heading__text{    
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  .consult-intelect-box_heading__text1{
+    margin: 0 auto;
+  }  
+
+  .consult-box_heading__title{
+    max-width: 400px;
+    width: 100%;
+    font-size: 28px !important;
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width:350px) {
+
+  .consult-box_heading__text{    
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  .consult-intelect-box_heading__text1{
+    margin: 0 auto;
+  }  
 }

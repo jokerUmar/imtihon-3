@@ -200,7 +200,7 @@ top: 72px;
   }
 
   .dropmenu{
-    display:inline-block;
+    display:flex;
   }
 
 }
@@ -280,17 +280,16 @@ top: 72px;
   .dropmenu-nav-list__item>a{
     font-size: 22px;
   }  
-
+  
   .dropmenu-nav-list{
     text-align: center;
     margin-left: 10px;
   }
-
+  
   .dropmenu{
     padding-left: 0;
     text-align: center;
   }
   
 }
-
 

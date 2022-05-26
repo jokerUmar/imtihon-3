@@ -164,6 +164,19 @@
   .expert-form-body{
     flex-wrap: wrap;
   }
+
+  .expert-form-upper_data__text2{
+    display: flex;
+  }
+  
+}
+
+@media screen and (max-width:360px) {
+
+
+  .expert-form-upper_data__text2{
+    margin-left: 10px;
+  }
   
 }
 

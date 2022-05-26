@@ -1,6 +1,6 @@
 
 .question{
-  background-image: url('/img/main/backgroud_red.png');
+    background-image: url('/img/main/backgroud_red.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -89,6 +89,10 @@
 
         &:nth-child(odd){
           margin-left: 0;
+        }
+
+        &:hover{
+          background-color: #DA4533;
         }
 
         &__text{
