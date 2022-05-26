@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 160px;
+  padding-bottom: 160px;
   font-family: 'Montserrat';
   
   &-container{
@@ -13,11 +14,8 @@
   &-data{
 
     display: flex;
+    justify-content: space-between;
     align-items: center;
-
-    &-box{
-
-    }
 
     &__title{
       font-family: 'STIX Two Text';
@@ -31,7 +29,137 @@
       max-width: 700px;
       line-height: 25.6px;
     }
-
   }
 
+  &-box{
+    overflow-x: scroll;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    &_card{
+      position: relative;
+      background-color: #1B1B1B;
+      margin-left: 20px;
+      text-align: center;
+      border-radius: 10px;
+      padding: 20px 20px 20px 25px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+
+
+      &:hover > .business-box_card__hover{
+        visibility: visible;
+      }
+
+      &:hover > .business-box_card__icon{
+        visibility: visible;
+      }
+
+      &:hover > .business-box_card__text{
+        color: white;
+      }
+
+
+
+
+
+      &>img{
+        margin-top: 62px;
+        padding-bottom: 65px;
+      }
+
+      &__hover{
+        visibility: hidden;
+        font-size: 18px;
+        text-align: left;
+        line-height: 28.8px;
+        margin-bottom: 10px;
+      }
+
+      &__text{
+        color: #8A8A8A;
+        text-align: left;
+        line-height: 28.8px;
+        font-size: 18px;
+        width: 249px;
+        margin-left: 15px;
+
+        &-change{
+          width: 249px;
+          text-align: left;
+          font-size: 16px;
+          line-height: 28.8px;
+          padding-bottom: 14px;
+        }
+
+      }
+
+      &__icon{
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        transform: rotate(45deg);
+        right: 10px;
+        top: 10px;
+        opacity: 0.5;
+        visibility: hidden;
+        &:hover{
+          opacity: 1;
+        }
+
+      }      
+    }
+  }
+}
+
+@media screen and (max-width:1600px) {
+  .business-box_card:nth-child(1){
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:1300px) {
+  .business-box_card:nth-child(2){
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:1000px) {
+  .business-box_card{
+    margin-left: 20px !important;
+  }
+  .business-data{
+    flex-direction: column;
+    &-box{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:866px) {
+  .business-box{
+    &_card{
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;      
+    }
+    
+  }
+}
+
+@media screen and (max-width:410px) {
+  .business-box{
+    &_card{
+      width: 280px;
+      margin-left: 20px;
+    }
+    
+  }
 }

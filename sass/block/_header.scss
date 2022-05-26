@@ -12,7 +12,7 @@
   padding-bottom: 20px;
   background-color: rgba(27, 27, 27, 1);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  position: fixed;
+  position: fixed; 
   width: 100%;
   z-index: 99;
 
@@ -59,21 +59,22 @@
 }
 
 .toggle{
-position: absolute;
-width: 90%;
+position: fixed;
+height: 10px;
+width: 100%;  
 z-index: 99;
+top: -100px;
 left: 0;
 top: 72px;
 
 &-bars{
   padding: 10px 16px;
-  margin-top: -30px;
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 28px;
   color: white;
   position: absolute; 
-  right: -50px;
-  top: -50px;
+  right: 20px;
+  top: -60px;
   border-radius: 5px;
   margin-right: -10px;
   display: none;
@@ -88,9 +89,9 @@ top: 72px;
 
 &-xmark{
   padding: 10px 16px;
-  margin-top: -10px;
   margin-right: 20px;
-  right: 40px;
+  right: 0px;
+  top: 0;
   height: 50px;
   position: absolute;
   font-size: 28px;
@@ -103,17 +104,18 @@ top: 72px;
 
 .dropmenu{
   width: 100%;
-  position: fixed;
   color: white;
-  top: -60px;
+  z-index: 99;
+  height: 100vh;
+  overflow-y: scroll;
   padding-top: 78px;
   padding-left: 120px;
   padding-right: 70px;
   background-color:rgba(27, 27, 27, 1);
-  transition: all 1s;
+  transition: all 0.4s;
   transform: translateX(1000px);
+  margin-top: -64px;
   display: none;
-  z-index: 99;
   
   &-nav{
     margin-right: auto;
@@ -182,14 +184,13 @@ top: 72px;
   }
 
   input:checked~.dropmenu{
-    transition: all 1s;
+    transition: all 0.4s;
     transform: translateX(0px);
   }
 
   .toggle{
-
     &-bars{
-      display:block;
+      display:inline-block;
     }
 
     &-xmark{
@@ -199,9 +200,9 @@ top: 72px;
   }
 
   .dropmenu{
-    display: flex;
+    display:inline-block;
   }
-  
+
 }
 
 @media screen and (max-width:768px) {
@@ -248,11 +249,11 @@ top: 72px;
   }
   
   .toggle-bars{
-    right: 0;
+    right: 20px;
   }
   
   .toggle-xmark{
-    right: 40px;
+    right: 0px;
   }
   
   .dropmenu{
@@ -262,6 +263,14 @@ top: 72px;
   .dropmenu-nav-list__item>a{
     font-size: 28px;
   }  
+
+  
+  .dropmenu-right-data__img{
+    width: 200px;  
+    height: 200px;
+    margin-left: 80px;
+  }
+  
   
 }
 
