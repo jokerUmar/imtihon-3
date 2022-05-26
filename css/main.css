@@ -797,30 +797,6 @@ template {
   position: relative;
 }
 
-.experience-box_right-cards_card::before {
-  content: '';
-  width: 2px;
-  bottom: -2px;
-  left: -1px;
-  border-radius: 20px;
-  height: 128.4px;
-  position: absolute;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(218, 69, 51, 0)), to(#da4533));
-  background: linear-gradient(to top, rgba(218, 69, 51, 0), #da4533);
-}
-
-.experience-box_right-cards_card::after {
-  content: '';
-  height: 2px;
-  top: 0;
-  left: 0px;
-  border-radius: 20px;
-  width: 128.4px;
-  position: absolute;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(218, 69, 51, 0)), to(#da4533));
-  background: linear-gradient(to top, rgba(218, 69, 51, 0), #da4533);
-}
-
 .experience-box_right-cards_card-change {
   width: 392px;
   height: 119px;
