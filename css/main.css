@@ -349,7 +349,7 @@ template {
 }
 
 .header-container {
-  width: 90%;
+  width: 1220px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,6 +637,7 @@ template {
 }
 
 .main {
+  overflow: hidden;
   font-family: 'Montserrat';
   background-color: #1b1b1b;
   padding-top: 109px;
@@ -792,6 +793,32 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.experience-box_right-cards_card::before {
+  content: '';
+  width: 2px;
+  bottom: -2px;
+  left: -1px;
+  border-radius: 20px;
+  height: 128.4px;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(218, 69, 51, 0)), to(#da4533));
+  background: linear-gradient(to top, rgba(218, 69, 51, 0), #da4533);
+}
+
+.experience-box_right-cards_card::after {
+  content: '';
+  height: 2px;
+  top: 0;
+  left: 0px;
+  border-radius: 20px;
+  width: 128.4px;
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(218, 69, 51, 0)), to(#da4533));
+  background: linear-gradient(to top, rgba(218, 69, 51, 0), #da4533);
 }
 
 .experience-box_right-cards_card-change {
@@ -1261,6 +1288,7 @@ template {
 }
 
 .question {
+  overflow: hidden;
   background-image: url("/img/main/backgroud_red.png");
   background-repeat: no-repeat;
   background-size: cover;
