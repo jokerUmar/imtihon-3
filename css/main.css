@@ -349,7 +349,7 @@ template {
 }
 
 .header-container {
-  width: 1220px;
+  width: 90%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
